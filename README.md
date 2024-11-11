@@ -30,12 +30,44 @@ Accede a `Microsoft Entra ID`
 
 ![Entra](./img/202411111344.png)
 
+Observa la siguiente imagen.
 
-https://www.youtube.com/watch?v=7nMKPPLaN7o
+![Dir métodos auth](./img/202411111549.png)
+
+En la sección `Protección`(1), haz clic en `Métodos de autenticación`(2). Observarás la `Directiva de métodos de autenticación` presente en tu tenant de M365. La columna `Método`(3) lista los disponibles, mientras que en `Habilitado`(4) harás que esté disponible (o no) para tus usuarios.
+
+## Passkey (FIDO2)
+
+El método de autenticación `Clave de paso` (**Passkey**) basado en `FIDO2` en Microsoft 365 es un enfoque moderno de autenticación ***sin contraseñas*** que mejora la seguridad y la experiencia de usuario. Utiliza estándares de la [Fido Alliance](https://fidoalliance.org/) y la **W3C** para permitir un acceso seguro basado en claves criptográficas, eliminando la necesidad de contraseñas tradicionales. 
+
+Las `claves de paso` se almacenan de forma segura en dispositivos del usuario, como teléfonos o hardware de autenticación, y autentican al usuario mediante procesos biométricos o códigos PIN locales. Esto reduce significativamente el riesgo de ataques de phishing o de robo de contraseñas, ya que las credenciales nunca se transmiten ni se almacenan en servidores.
+
+En la siguiente imagen puedes ver cómo este tenant no ofrece este medio a autenticación.
+
+![Passkey](./img/202411111549.png)
+
+Para configurarlo haz clic en él.
+
+Si haces clic en `Habilitar`(1), observa como este método de autenticación queda disponible para todos los usuarios den tenant(2). Para configurarlo, haz clic en `Configurar` (3)
+
+![Passkey2](./img/202411111600.png)
+
+Observa la imagen. En ella verás las diferentes formas de configurar este método.
+
+![Passkey2](./img/202411111647.png)
+
+(1) Permitir configuración de autoservicio.
 
 
 
 
-[encontrarla aquí](https://learn.microsoft.com/es-es/windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust?tabs=intune)
+
+
+
+
+
+
+
+
 
 
