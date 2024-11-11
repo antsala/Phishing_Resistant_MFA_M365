@@ -57,17 +57,7 @@ Observa la imagen. En ella verás las diferentes formas de configurar este méto
 ![Passkey2](./img/202411111647.png)
 
 (1) Permitir configuración de autoservicio.
+etc.
 
-
-
-
-
-
-
-
-
-
-
-
-
+https://www.youtube.com/watch?v=7nMKPPLaN7o
 
