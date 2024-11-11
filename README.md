@@ -1,5 +1,5 @@
 # Phishing_Resistant_MFA_M365
-Usar Authentication Strength para proteger la suplantación
+Usar factores de autenticacion modernos.
 
 ## Requisitos
 
@@ -19,7 +19,7 @@ La cuestión es cómo conseguir el tercer punto. Vamos a aprenderlo.
 En este tutorial aprenderemos a crear MFA resistente al phishing usando los siguientes componentes de M365.
 
 * `Passkeys`.
-* `Políticas de Acceso Condicional` (Conditioal Access Polocies)
+* `Políticas de Acceso Condicional` (Conditional Access Polocies)
 * `Fortaleza de autenticación`(Authentication Strength)
 * `Windows Hello para la Empresa` (WHFB)
 * `Temporary Access Passwords` (Contraseñas temporales o de un solo uso)
