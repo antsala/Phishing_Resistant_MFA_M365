@@ -120,6 +120,54 @@ En la configuración puedes poner la duración y longitud del código.
 
 ## Configuración de Tokens OATH de hardware (versión preliminar)
 
+Se refiere a la posibilidad de utilizar tokens físicos de hardware que soporten el estándar `OATH` (Open Authentication) para la autenticación multifactor (MFA).
+
+Estos tokens `OATH de hardware` generan contraseñas de un solo uso (`OTP`) que cambian periódicamente, similar a los códigos generados por aplicaciones de autenticación. La inclusión de esta configuración permite a los administradores configurar y gestionar estos tokens para los usuarios dentro de la organización como un método adicional de autenticación.
+
+El término "versión preliminar" indica que la característica aún está en desarrollo o en una fase de prueba y podría no tener todas las funcionalidades finales o estar sujeta a cambios antes de su lanzamiento oficial.
+
+![OAUTH](./img/202411120825.png)
+
+## Configuración de Tokens OATH de software de terceros
+
+Se refiere a la capacidad de usar tokens basados en el estándar `OATH` (Open Authentication) ***generados por aplicaciones de autenticación de terceros*** para el proceso de autenticación multifactor (MFA).
+
+Estos tokens `OATH` suelen ser códigos temporales de un solo uso (`TOTP` - Time-based One-Time Password) que se regeneran periódicamente y se utilizan como un segundo factor de autenticación. Esto significa que los usuarios pueden configurar aplicaciones como `Google Authenticator`, `Authy`, o cualquier otra compatible con OATH para generar códigos de verificación que pueden utilizarse al iniciar sesión en servicios de Microsoft que requieren MFA, en lugar de depender únicamente de la aplicación Microsoft Authenticator.
+
+Esta opción es útil para usuarios que prefieren usar un autenticador de terceros o que ya tienen configuraciones existentes en otras aplicaciones de autenticación.
+
+![OAUTH3](./img/202411120828.png)
+
+## Configuración de llamada de voz
+
+Se refiere a un método alternativo de autenticación en el que se te puede llamar por teléfono para verificar tu identidad. En lugar de utilizar un mensaje de texto (SMS) o una notificación en la app de Authenticator, se puede recibir una llamada telefónica automática que te pedirá que presiones una tecla (por ejemplo, "1") para confirmar que eres tú quien está intentando acceder a la cuenta.
+
+![Voz](./img/202411120829.png)
+
+[Saber más sobre Llamada de voz](https://aka.ms/phonecalldoc)
+
+## Configuración de OTP de correo electrónico
+
+Se refiere a la opción de usar un código de un solo uso (`OTP`, por sus siglas en inglés) que se envía por correo electrónico como un método de autenticación adicional. Este código se utiliza como parte de la autenticación multifactor (MFA), y es una forma de verificar la identidad del usuario al intentar acceder a una cuenta o servicio de Microsoft.
+
+Cuando se configura esta opción, cada vez que se inicie sesión en una cuenta de Microsoft, el sistema puede enviar un correo electrónico con un código OTP al correo electrónico registrado. El usuario debe ingresar ese código en el portal para completar el proceso de autenticación.
+
+![OTP](./img/202411120833.png)
+
+## Configuración de Autenticación basada en certificados
+
+Se refiere al uso de `certificados digitales` para autenticar a un usuario, en lugar de las tradicionales contraseñas o incluso códigos generados por la aplicación de autenticación.
+
+Cómo funciona:
+
+1) ***Generación de Certificado***: El usuario debe tener un certificado digital que esté instalado en su dispositivo o en un sistema de administración de identidades (como un proveedor de servicios de identidad que soporte certificados).
+
+2) ***Autenticación***: En lugar de ingresar una contraseña, el sistema verifica la autenticidad del certificado. Esto puede hacerse a través de un servidor o un sistema que valide el certificado presentado por el dispositivo del usuario.
+
+3) ***Uso de Microsoft Authenticator***: Si se habilita la autenticación basada en certificados, Microsoft Authenticator puede gestionar o almacenar los certificados necesarios en el dispositivo del usuario para permitir el acceso a aplicaciones o servicios protegidos.
+
+Este método se considera más seguro que las contraseñas tradicionales porque es más difícil de replicar o robar que una clave secreta, y su uso es frecuente en entornos corporativos que requieren altos niveles de seguridad, como acceso a aplicaciones críticas o redes privadas.
+
 
 https://www.youtube.com/watch?v=7nMKPPLaN7o
 
