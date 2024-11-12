@@ -180,7 +180,7 @@ Si haces clic en el `Authentication Strength` denominado ***Multifactor authenti
 
 ![Strengths2](./img/202411120844.png)
 
-Generalmente desearás crear tu propia combinación de factores de autenticación. Para ello, regresa a la pantalla anterior y haz clic en `+Nueva intensidad de autenticación`.
+Generalmente desearás crear tu propia combinación de factores de autenticación. Para ello, regresa a la pantalla anterior y haz clic en `+ Nueva intensidad de autenticación`.
 
 ![New](./img/202411120845.png)
 
