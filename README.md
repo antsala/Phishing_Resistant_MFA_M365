@@ -56,11 +56,11 @@ Observa la imagen. En ella verás las diferentes formas de configurar este méto
 
 ![Passkey2](./img/202411111647.png)
 
-* `Permitir configuración de autoservicio` indica si los usuarios pueden registrar o configurar por sí mismos sus dispositivos FIDO2 sin la intervención del administrador.
+(1) `Permitir configuración de autoservicio` indica si los usuarios pueden registrar o configurar por sí mismos sus dispositivos FIDO2 sin la intervención del administrador.
 
-* `Exigir la atestación` refiere a la validación de la autenticidad del dispositivo de seguridad (como un token físico o una clave de seguridad USB) cuando se registra para su uso en un sistema. La atestación es un mecanismo de verificación por el cual el dispositivo proporciona evidencia que permite al sistema de autenticación confirmar que es legítimo y que proviene de un fabricante confiable.
+(2) `Exigir la atestación` refiere a la validación de la autenticidad del dispositivo de seguridad (como un token físico o una clave de seguridad USB) cuando se registra para su uso en un sistema. La atestación es un mecanismo de verificación por el cual el dispositivo proporciona evidencia que permite al sistema de autenticación confirmar que es legítimo y que proviene de un fabricante confiable.
 
-* `Exigir las restricciones de clave` se refiere a cómo se deben aplicar y gestionar las claves de autenticación. Esta opción permite especificar que las claves utilizadas por los usuarios para la autenticación deben cumplir con ciertas restricciones o criterios.
+(3)(4) `Exigir las restricciones de clave` se refiere a cómo se deben aplicar y gestionar las claves de autenticación. Esta opción permite especificar que las claves utilizadas por los usuarios para la autenticación deben cumplir con ciertas restricciones o criterios.
 
     Estas restricciones pueden incluir:
 
@@ -72,7 +72,7 @@ Observa la imagen. En ella verás las diferentes formas de configurar este méto
 
     ***Control de acceso***: Permitir o denegar claves de autenticación según políticas específicas de la organización.
 
-* `AAGUID` (Authenticator Attestation GUID) es un identificador global único asignado a un tipo de autenticador específico. Este identificador permite que los servidores de autenticación reconozcan la clase o modelo de dispositivo autenticador que está siendo utilizado sin revelar detalles específicos sobre la instancia del dispositivo.
+(5) `AAGUID` (Authenticator Attestation GUID) es un identificador global único asignado a un tipo de autenticador específico. Este identificador permite que los servidores de autenticación reconozcan la clase o modelo de dispositivo autenticador que está siendo utilizado sin revelar detalles específicos sobre la instancia del dispositivo.
 
     El **AAGUID** se utiliza principalmente en la fase de atestación, cuando un dispositivo autenticador presenta pruebas de que es confiable y legítimo. Por ejemplo, cuando un usuario registra un dispositivo FIDO2 en un sistema, el servidor recibe información que incluye el **AAGUID** para poder identificar de qué tipo de autenticador se trata y decidir si confía en él según sus políticas de seguridad.
 
