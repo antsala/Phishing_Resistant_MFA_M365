@@ -56,8 +56,21 @@ Observa la imagen. En ella verás las diferentes formas de configurar este méto
 
 ![Passkey2](./img/202411111647.png)
 
-(1) Permitir configuración de autoservicio.
-etc.
+* `Permitir configuración de autoservicio` indica si los usuarios pueden registrar o configurar por sí mismos sus dispositivos FIDO2 sin la intervención del administrador.
+
+* `Exigir la atestación` refiere a la validación de la autenticidad del dispositivo de seguridad (como un token físico o una clave de seguridad USB) cuando se registra para su uso en un sistema. La atestación es un mecanismo de verificación por el cual el dispositivo proporciona evidencia que permite al sistema de autenticación confirmar que es legítimo y que proviene de un fabricante confiable.
+
+* `Exigir las restricciones de clave` se refiere a cómo se deben aplicar y gestionar las claves de autenticación. Esta opción permite especificar que las claves utilizadas por los usuarios para la autenticación deben cumplir con ciertas restricciones o criterios.
+
+Estas restricciones pueden incluir:
+
+***Tipo de clave***: Especificar qué tipo de clave de seguridad puede usarse (por ejemplo, claves con autenticación biométrica o claves con PIN).
+
+***Uso de claves residentes o no residentes***: Controlar si las claves de seguridad deben almacenar la información de autenticación en el dispositivo de la clave (clave residente) o si esta debe gestionarse de otra forma (clave no residente).
+
+***Mecanismos de seguridad***: Restringir a ciertos niveles de seguridad, como el uso de claves que cumplan con estándares de autenticación específicos (por ejemplo, FIPS, nivel de certificación).
+
+***Control de acceso***: Permitir o denegar claves de autenticación según políticas específicas de la organización.
 
 https://www.youtube.com/watch?v=7nMKPPLaN7o
 
