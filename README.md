@@ -196,5 +196,35 @@ Finaliza el asistente y comprobarás que se ha creado tu nueva intensidad de aut
 
 Es el momento de asignar este `Authentication Strength` a tus usuarios.
 
-https://www.youtube.com/watch?v=7nMKPPLaN7o
+## Aplicar el Authentication Strength por medio de una directiva de Acceso Condicional.
+
+La aplicación del `Authentication Strength` a los usuarios se hace por medio de una directiva de `Acceso Condicional`. 
+
+En `Microsoft Entra ID`, en la seccion `Protección`, selecciona `Acceso condicional` (`Conditional Access`) y luego crea una ***Nueva directiva***.
+
+![AC](./img/202411121006.png)
+
+Estudia la siguiente imagen.
+
+![AC2](./img/202411121010.png)
+
+En (1) pon en nombre que desees a esta directiva de `Acceso condicional`. A continuación, en (2) selecciona los usuarios que la tendrán aplicada.
+
+Los recursos de destino son los servicios de M365 en la nube (3), observa como se ha cambiado en nombre y ahora se denomina `Todos los recursos`.
+
+En `Grant` (Condeder) (4)  fíjate como en la lista aparece `Requerir intensidad de autenticación` (5). Selecciona la casilla de verificación.
+
+Una vez seleccionada (1) despliega la lista (2) y en ella selecciona la `Intensidad de autenticación` que creaste antes. Haz clic en ***Seleccionar***.
+
+![AC3](./img/202411121108.png)
+
+Por último, ***Activa*** da directiva y haz clic en ***Crear***.
+
+![AC3](./img/202411121111.png)
+
+Verás como tu directiva se ha creado y está activa.
+
+![AC3](./img/202411121113.png)
+
+Enhorabuena, acabas de aprender a configurar el tenant para usar MFA resistente al phishing.
 
