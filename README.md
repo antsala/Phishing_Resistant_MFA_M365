@@ -72,5 +72,54 @@ Observa la imagen. En ella verás las diferentes formas de configurar este méto
 
     ***Control de acceso***: Permitir o denegar claves de autenticación según políticas específicas de la organización.
 
+* `AAGUID` (Authenticator Attestation GUID) es un identificador global único asignado a un tipo de autenticador específico. Este identificador permite que los servidores de autenticación reconozcan la clase o modelo de dispositivo autenticador que está siendo utilizado sin revelar detalles específicos sobre la instancia del dispositivo.
+
+    El **AAGUID** se utiliza principalmente en la fase de atestación, cuando un dispositivo autenticador presenta pruebas de que es confiable y legítimo. Por ejemplo, cuando un usuario registra un dispositivo FIDO2 en un sistema, el servidor recibe información que incluye el **AAGUID** para poder identificar de qué tipo de autenticador se trata y decidir si confía en él según sus políticas de seguridad.
+
+Una vez configurada la política `FIDO2` haz clic en el botón ***Guardar***.
+
+## Microsoft Authenticator
+
+Este factor de autenticación está activado y configurado por defecto. Permite usar la aplicación `Microsoft Authenticator`, que es una aplicación de autenticación multifactor (MFA) desarrollada por Microsoft. Funciona generando códigos de verificación temporales o enviando notificaciones de aprobación a dispositivos móviles.
+
+Haz clic en la pestaña ***Configurar*** para acceder a su configuración.
+
+![MA](./img/202411120724.png)
+
+Cuando la opción `Permitir el uso de Microsoft Authenticator OTP` está activada, la aplicación genera un código de un solo uso basado en un algoritmo de tiempo (`TOTP`) que el usuario puede ingresar al autenticarse. Este código es creado automáticamente por la app y se actualiza cada 30 segundos.
+
+El usuario solo necesita abrir la aplicación y ver el código para usarlo al iniciar sesión. Esto es diferente de la autenticación por notificaciones push, en la cual el usuario simplemente aprueba una solicitud en la app.
+
+![OTP](./img/202411120731.png)
+
+[Saber más sobre OTP](https://aka.ms/numbermatchdoc)
+
+El resto de configuraciones son las siguientes.
+
+![OTP2](./img/202411120737.png)
+
+## SMS 
+
+Este método de autenticación envía un mensaje de texto al móvil que ha configurado el usuario en su MFA.
+
+![SMS](./img/202411120740.png)
+
+[Saber más sobre SMS](https://learn.microsoft.com/es-es/entra/identity/authentication/concept-authentication-phone-options#mobile-phone-verification)
+
+## Pase de acceso temporal (TAP)
+
+Es un código de acceso de uso limitado o de tiempo limitado que los usuarios pueden usar como factor de autenticación.
+
+![TAP](./img/202411120743.png)
+
+En la configuración puedes poner la duración y longitud del código.
+
+![TAP2](./img/202411120744.png)
+
+[Saber más sobre TAP](https://learn.microsoft.com/es-es/entra/identity/authentication/howto-authentication-temporary-access-pass)
+
+## Configuración de Tokens OATH de hardware (versión preliminar)
+
+
 https://www.youtube.com/watch?v=7nMKPPLaN7o
 
