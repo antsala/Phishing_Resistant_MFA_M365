@@ -168,6 +168,33 @@ Cómo funciona:
 
 Este método se considera más seguro que las contraseñas tradicionales porque es más difícil de replicar o robar que una clave secreta, y su uso es frecuente en entornos corporativos que requieren altos niveles de seguridad, como acceso a aplicaciones críticas o redes privadas.
 
+## Creación de una nueva 'Authentication Strength'
+
+Generalmente las organizaciones están interesadas en un subconjunto de los factores de autenticación detallados anteriormente. La selección de los factores deseados se conoce como `Authentication Strength` o `Niveles de intensidad de autenticación`.
+
+El tentant ya posee definidos diferentes `Authentication Strength`, tal y como puedes ver en la siguiente imagen.
+
+![Strengths](./img/202411120841.png)
+
+Si haces clic en el `Authentication Strength` denominado ***Multifactor authentication*** verás los métodos disponibles.
+
+![Strengths2](./img/202411120844.png)
+
+Generalmente desearás crear tu propia combinación de factores de autenticación. Para ello, regresa a la pantalla anterior y haz clic en `+Nueva intensidad de autenticación`.
+
+![New](./img/202411120845.png)
+
+Observa la imagen.
+
+![New2](./img/202411120848.png)
+
+De las combinaciones posibles, se recomienda usar aquellas que ofrezcan ***MFA resistente a la suplantación de identidad***, pues es el objetivo de este tutorial.
+
+Finaliza el asistente y comprobarás que se ha creado tu nueva intensidad de autenticación.
+
+![New2](./img/202411120850.png)
+
+Es el momento de asignar este `Authentication Strength` a tus usuarios.
 
 https://www.youtube.com/watch?v=7nMKPPLaN7o
 
