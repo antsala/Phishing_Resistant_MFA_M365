@@ -130,9 +130,9 @@ El término "versión preliminar" indica que la característica aún está en de
 
 ## Configuración de Tokens OATH de software de terceros
 
-Se refiere a la capacidad de usar tokens basados en el estándar `OATH` (Open Authentication) ***generados por aplicaciones de autenticación de terceros*** para el proceso de autenticación multifactor (MFA).
+Se refiere a la capacidad de usar tokens basados en el estándar `OATH` (Open Authentication OAUTH2) ***generados por aplicaciones de autenticación de terceros*** para el proceso de autenticación multifactor (MFA).
 
-Estos tokens `OATH` suelen ser códigos temporales de un solo uso (`TOTP` - Time-based One-Time Password) que se regeneran periódicamente y se utilizan como un segundo factor de autenticación. Esto significa que los usuarios pueden configurar aplicaciones como `Google Authenticator`, `Authy`, o cualquier otra compatible con OATH para generar códigos de verificación que pueden utilizarse al iniciar sesión en servicios de Microsoft que requieren MFA, en lugar de depender únicamente de la aplicación Microsoft Authenticator.
+Estos tokens `OATH` suelen ser códigos temporales de un solo uso (`TOTP` - Time-based One-Time Password) que se regeneran periódicamente y se utilizan como un segundo factor de autenticación. Esto significa que los usuarios pueden configurar aplicaciones como `Google Authenticator`, `Authy`, o cualquier otra compatible con `OATH` para generar códigos de verificación que pueden utilizarse al iniciar sesión en servicios de Microsoft que requieren MFA, en lugar de depender únicamente de la aplicación Microsoft Authenticator.
 
 Esta opción es útil para usuarios que prefieren usar un autenticador de terceros o que ya tienen configuraciones existentes en otras aplicaciones de autenticación.
 
